@@ -14,3 +14,60 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
+
+#container {
+	max-width: 100%; 
+	padding: 0px; 
+}
+
+/*
+
+	HEADER STYLES
+
+*/
+
+#header {margin-top: -60px;}
+
+#logo, #logo img {width:100%;}
+
+
+
+/*
+
+	NAVIGATION STYLES
+
+*/
+
+.menu {
+	background-color: white;
+	background-image: none;
+}
+
+.menu a {color:black;text-shadow: none;}
+
+.top-menu {
+	position: relative;
+	top: 60px;
+	right: 125px;
+}
+
+.nav-wrap {background-color:white;}
+
+.main-nav {
+	clear: both;
+	width: 80%;
+	margin: auto;
+}
+
+/*
+
+	CONTENT STYLES
+
+*/
+
+.content-wrap {
+	width:80%;
+	margin:auto;
+}
+
