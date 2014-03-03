@@ -66,6 +66,13 @@
 
 */
 
+#wrapper {
+	border:none;
+	-webkit-border-radius: none;
+	-moz-border-radius: none;
+	margin: 0 auto;
+}
+
 .content-wrap {
 	width:80%;
 	margin:auto;

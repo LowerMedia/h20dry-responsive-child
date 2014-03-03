@@ -53,7 +53,7 @@ if( !defined( 'ABSPATH' ) ) {
 	<div class="skip-container cf">
 		<a class="skip-link screen-reader-text focusable" href="#main"><?php _e( '&darr; Skip to Main Content', 'responsive' ); ?></a>
 	</div><!-- .skip-container -->
-	<div id="header">
+	<header id="header">
 
 		<?php responsive_header_top(); // before header content hook ?>
 
@@ -90,7 +90,12 @@ if( !defined( 'ABSPATH' ) ) {
 
 		<?php get_sidebar( 'top' ); ?>
 		
-		<div id='nav-wrap' class='nav-wrap' >
+		
+
+		<?php responsive_header_bottom(); // after header content hook ?>
+
+	</header><!-- end of #header -->
+	<div id='nav-wrap' class='nav-wrap' >
 		<?php wp_nav_menu( array(
 							   'container'       => 'nav',
 							   'container_class' => 'main-nav',
@@ -110,10 +115,6 @@ if( !defined( 'ABSPATH' ) ) {
 			);
 			?>
 		<?php } ?>
-
-		<?php responsive_header_bottom(); // after header content hook ?>
-
-	</div><!-- end of #header -->
 <?php responsive_header_end(); // after header container hook ?>
 
 <?php responsive_wrapper(); // before wrapper container hook ?>
